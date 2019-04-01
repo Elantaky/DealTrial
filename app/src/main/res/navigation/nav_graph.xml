@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/categories"
-        android:name="com.zecode.deal.CategoriesFragment"
+        android:name="com.zecode.deal.categories.view.CategoriesFragment"
         android:label="fragment_categories"
         tools:layout="@layout/fragment_main_menu">
         <action
@@ -31,17 +31,17 @@
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
-        android:name="com.zecode.deal.RegisterFragment"
+        android:name="com.zecode.deal.register.view.RegisterFragment"
         android:label="fragment_register"
         tools:layout="@layout/fragment_register" />
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.zecode.deal.LoginFragment"
+        android:name="com.zecode.deal.login.view.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" />
     <fragment
         android:id="@+id/placeAnAd"
-        android:name="com.zecode.deal.PlaceAnAd"
+        android:name="com.zecode.deal.placeAnAD.view.PlaceAnAd"
         android:label="fragment_place_an_ad"
         tools:layout="@layout/fragment_place_an_ad" >
         <action
@@ -53,7 +53,7 @@
     </fragment>
     <fragment
         android:id="@+id/subCategoriesFragment"
-        android:name="com.zecode.deal.SubCategoriesFragment"
+        android:name="com.zecode.deal.subCategories.view.SubCategoriesFragment"
         android:label="fragment_sub_categories"
         tools:layout="@layout/fragment_sub_categories" >
         <action
@@ -62,7 +62,7 @@
     </fragment>
     <fragment
         android:id="@+id/subSubCategories"
-        android:name="com.zecode.deal.SubSubCategories"
+        android:name="com.zecode.deal.subSubCategories.view.SubSubCategories"
         android:label="fragment_sub_sub_categories"
         tools:layout="@layout/fragment_sub_sub_categories" >
         <action
@@ -71,12 +71,12 @@
     </fragment>
     <fragment
         android:id="@+id/locationFragment"
-        android:name="com.zecode.deal.LocationFragment"
+        android:name="com.zecode.deal.location.view.LocationFragment"
         android:label="fragment_location"
         tools:layout="@layout/fragment_location" />
     <fragment
         android:id="@+id/previewFragment"
-        android:name="com.zecode.deal.PreviewFragment"
+        android:name="com.zecode.deal.preview.view.PreviewFragment"
         android:label="fragment_preview"
         tools:layout="@layout/fragment_preview" >
         <action
@@ -85,7 +85,7 @@
     </fragment>
     <fragment
         android:id="@+id/verificationFragment"
-        android:name="com.zecode.deal.VerificationFragment"
+        android:name="com.zecode.deal.verification.view.VerificationFragment"
         android:label="fragment_verification"
         tools:layout="@layout/fragment_verification" >
         <action
@@ -94,12 +94,12 @@
     </fragment>
     <fragment
         android:id="@+id/featureFragment"
-        android:name="com.zecode.deal.FeatureFragment"
+        android:name="com.zecode.deal.feature.view.FeatureFragment"
         android:label="fragment_feature"
         tools:layout="@layout/fragment_feature" />
     <fragment
         android:id="@+id/adsMenuFramgnet"
-        android:name="com.zecode.deal.AdsMenuFramgnet"
+        android:name="com.zecode.deal.adsMenuFragment.view.AdsMenuFramgnet"
         android:label="fragment_ads_menu_framgnet"
         tools:layout="@layout/fragment_ads_menu_framgnet" >
         <action
@@ -111,7 +111,7 @@
     </fragment>
     <fragment
         android:id="@+id/adDetailsFragment"
-        android:name="com.zecode.deal.AdDetailsFragment"
+        android:name="com.zecode.deal.adDetails.view.AdDetailsFragment"
         android:label="fragment_ad_details"
         tools:layout="@layout/fragment_ad_details" >
         <action
@@ -120,12 +120,12 @@
     </fragment>
     <fragment
         android:id="@+id/filterationFragment"
-        android:name="com.zecode.deal.FilterationFragment"
+        android:name="com.zecode.deal.filteration.view.FilterationFragment"
         android:label="fragment_filteration"
         tools:layout="@layout/fragment_filteration" />
     <fragment
         android:id="@+id/conversationFragment"
-        android:name="com.zecode.deal.ConversationFragment"
+        android:name="com.zecode.deal.conversation.view.ConversationFragment"
         android:label="fragment_conversation"
         tools:layout="@layout/fragment_conversation" />
     <fragment android:id="@+id/drawer" >
@@ -150,12 +150,12 @@
     </fragment>
     <fragment
         android:id="@+id/myAdsFragment"
-        android:name="com.zecode.deal.MyAdsFragment"
+        android:name="com.zecode.deal.myAds.view.MyAdsFragment"
         android:label="fragment_my_ads"
         tools:layout="@layout/fragment_my_ads" />
     <fragment
         android:id="@+id/messagesFragment"
-        android:name="com.zecode.deal.MessagesFragment"
+        android:name="com.zecode.deal.messages.view.MessagesFragment"
         android:label="fragment_chats"
         tools:layout="@layout/fragment_chats" >
         <action
@@ -164,7 +164,7 @@
     </fragment>
     <fragment
         android:id="@+id/archiveFragment"
-        android:name="com.zecode.deal.ArchiveFragment"
+        android:name="com.zecode.deal.archive.view.ArchiveFragment"
         android:label="fragment_archive"
         tools:layout="@layout/fragment_archive" >
         <action
@@ -173,7 +173,7 @@
     </fragment>
     <fragment
         android:id="@+id/chatsFragment2"
-        android:name="com.zecode.deal.ChatsFragment"
+        android:name="com.zecode.deal.chats.view.ChatsFragment"
         android:label="fragment_chats2"
         tools:layout="@layout/fragment_chats2" >
         <action
@@ -185,7 +185,7 @@
     </fragment>
     <fragment
         android:id="@+id/favoritesFragment"
-        android:name="com.zecode.deal.FavoritesFragment"
+        android:name="com.zecode.deal.favourites.view.FavoritesFragment"
         android:label="fragment_favorites"
         tools:layout="@layout/fragment_favorites" >
         <action
@@ -197,22 +197,22 @@
     </fragment>
     <fragment
         android:id="@+id/favoriteAdsFragment"
-        android:name="com.zecode.deal.FavoriteAdsFragment"
+        android:name="com.zecode.deal.favouriteAds.view.FavoriteAdsFragment"
         android:label="fragment_favorite_ads"
         tools:layout="@layout/fragment_favorite_ads" />
     <fragment
         android:id="@+id/favoriteSearchesFragment"
-        android:name="com.zecode.deal.FavoriteSearchesFragment"
+        android:name="com.zecode.deal.favouriteSearches.view.FavoriteSearchesFragment"
         android:label="fragment_favorite_searches"
         tools:layout="@layout/fragment_favorite_searches" />
     <fragment
         android:id="@+id/settingFragment"
-        android:name="com.zecode.deal.SettingFragment"
+        android:name="com.zecode.deal.setting.view.SettingFragment"
         android:label="fragment_setting"
         tools:layout="@layout/fragment_setting" />
     <fragment
         android:id="@+id/contactFragment"
-        android:name="com.zecode.deal.ContactFragment"
+        android:name="com.zecode.deal.contact.view.ContactFragment"
         android:label="fragment_contact"
         tools:layout="@layout/fragment_contact" />
 </navigation>
