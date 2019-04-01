@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/categories">
+
+    <fragment
+        android:id="@+id/categories"
+        android:name="com.zecode.deal.CategoriesFragment"
+        android:label="fragment_categories"
+        tools:layout="@layout/fragment_main_menu">
+        <action
+            android:id="@+id/action_mainMenu_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_mainMenu_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_mainMenu_to_placeAnAd"
+            app:destination="@id/placeAnAd" />
+        <action
+            android:id="@+id/action_categories_to_subCategoriesFragment"
+            app:destination="@id/subCategoriesFragment" />
+        <action
+            android:id="@+id/action_categories_to_locationFragment"
+            app:destination="@id/locationFragment" />
+        <action
+            android:id="@+id/action_categories_to_drawer"
+            app:destination="@id/drawer" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.zecode.deal.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.zecode.deal.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/placeAnAd"
+        android:name="com.zecode.deal.PlaceAnAd"
+        android:label="fragment_place_an_ad"
+        tools:layout="@layout/fragment_place_an_ad" >
+        <action
+            android:id="@+id/action_placeAnAd_to_verificationFragment"
+            app:destination="@id/verificationFragment" />
+        <action
+            android:id="@+id/action_placeAnAd_to_previewFragment"
+            app:destination="@id/previewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/subCategoriesFragment"
+        android:name="com.zecode.deal.SubCategoriesFragment"
+        android:label="fragment_sub_categories"
+        tools:layout="@layout/fragment_sub_categories" >
+        <action
+            android:id="@+id/action_subCategoriesFragment_to_subSubCategories"
+            app:destination="@id/subSubCategories" />
+    </fragment>
+    <fragment
+        android:id="@+id/subSubCategories"
+        android:name="com.zecode.deal.SubSubCategories"
+        android:label="fragment_sub_sub_categories"
+        tools:layout="@layout/fragment_sub_sub_categories" >
+        <action
+            android:id="@+id/action_subSubCategories_to_adsMenuFramgnet"
+            app:destination="@id/adsMenuFramgnet" />
+    </fragment>
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.zecode.deal.LocationFragment"
+        android:label="fragment_location"
+        tools:layout="@layout/fragment_location" />
+    <fragment
+        android:id="@+id/previewFragment"
+        android:name="com.zecode.deal.PreviewFragment"
+        android:label="fragment_preview"
+        tools:layout="@layout/fragment_preview" >
+        <action
+            android:id="@+id/action_previewFragment_to_verificationFragment"
+            app:destination="@id/verificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/verificationFragment"
+        android:name="com.zecode.deal.VerificationFragment"
+        android:label="fragment_verification"
+        tools:layout="@layout/fragment_verification" >
+        <action
+            android:id="@+id/action_verificationFragment_to_featureFragment"
+            app:destination="@id/featureFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/featureFragment"
+        android:name="com.zecode.deal.FeatureFragment"
+        android:label="fragment_feature"
+        tools:layout="@layout/fragment_feature" />
+    <fragment
+        android:id="@+id/adsMenuFramgnet"
+        android:name="com.zecode.deal.AdsMenuFramgnet"
+        android:label="fragment_ads_menu_framgnet"
+        tools:layout="@layout/fragment_ads_menu_framgnet" >
+        <action
+            android:id="@+id/action_adsMenuFramgnet_to_adDetailsFragment"
+            app:destination="@id/adDetailsFragment" />
+        <action
+            android:id="@+id/action_adsMenuFramgnet_to_filterationFragment"
+            app:destination="@id/filterationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adDetailsFragment"
+        android:name="com.zecode.deal.AdDetailsFragment"
+        android:label="fragment_ad_details"
+        tools:layout="@layout/fragment_ad_details" >
+        <action
+            android:id="@+id/action_adDetailsFragment_to_conversationFragment"
+            app:destination="@id/conversationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/filterationFragment"
+        android:name="com.zecode.deal.FilterationFragment"
+        android:label="fragment_filteration"
+        tools:layout="@layout/fragment_filteration" />
+    <fragment
+        android:id="@+id/conversationFragment"
+        android:name="com.zecode.deal.ConversationFragment"
+        android:label="fragment_conversation"
+        tools:layout="@layout/fragment_conversation" />
+    <fragment android:id="@+id/drawer" >
+        <action
+            android:id="@+id/action_drawer_to_adsMenuFramgnet"
+            app:destination="@id/adsMenuFramgnet" />
+        <action
+            android:id="@+id/action_drawer_to_myAdsFragment"
+            app:destination="@id/myAdsFragment" />
+        <action
+            android:id="@+id/action_drawer_to_chatsFragment2"
+            app:destination="@id/chatsFragment2" />
+        <action
+            android:id="@+id/action_drawer_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+        <action
+            android:id="@+id/action_drawer_to_settingFragment"
+            app:destination="@id/settingFragment" />
+        <action
+            android:id="@+id/action_drawer_to_contactFragment"
+            app:destination="@id/contactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myAdsFragment"
+        android:name="com.zecode.deal.MyAdsFragment"
+        android:label="fragment_my_ads"
+        tools:layout="@layout/fragment_my_ads" />
+    <fragment
+        android:id="@+id/messagesFragment"
+        android:name="com.zecode.deal.MessagesFragment"
+        android:label="fragment_chats"
+        tools:layout="@layout/fragment_chats" >
+        <action
+            android:id="@+id/action_chatsFragment_to_conversationFragment"
+            app:destination="@id/conversationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/archiveFragment"
+        android:name="com.zecode.deal.ArchiveFragment"
+        android:label="fragment_archive"
+        tools:layout="@layout/fragment_archive" >
+        <action
+            android:id="@+id/action_archiveFragment_to_conversationFragment"
+            app:destination="@id/conversationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatsFragment2"
+        android:name="com.zecode.deal.ChatsFragment"
+        android:label="fragment_chats2"
+        tools:layout="@layout/fragment_chats2" >
+        <action
+            android:id="@+id/action_chatsFragment2_to_messagesFragment"
+            app:destination="@id/messagesFragment" />
+        <action
+            android:id="@+id/action_chatsFragment2_to_archiveFragment"
+            app:destination="@id/archiveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.zecode.deal.FavoritesFragment"
+        android:label="fragment_favorites"
+        tools:layout="@layout/fragment_favorites" >
+        <action
+            android:id="@+id/action_favoritesFragment_to_favoriteAdsFragment"
+            app:destination="@id/favoriteAdsFragment" />
+        <action
+            android:id="@+id/action_favoritesFragment_to_favoriteSearchesFragment"
+            app:destination="@id/favoriteSearchesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteAdsFragment"
+        android:name="com.zecode.deal.FavoriteAdsFragment"
+        android:label="fragment_favorite_ads"
+        tools:layout="@layout/fragment_favorite_ads" />
+    <fragment
+        android:id="@+id/favoriteSearchesFragment"
+        android:name="com.zecode.deal.FavoriteSearchesFragment"
+        android:label="fragment_favorite_searches"
+        tools:layout="@layout/fragment_favorite_searches" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.zecode.deal.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.zecode.deal.ContactFragment"
+        android:label="fragment_contact"
+        tools:layout="@layout/fragment_contact" />
+</navigation>
